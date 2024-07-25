@@ -792,7 +792,7 @@ section,
 }
 
 .hero.section {
-  background-image: url("../img/homeImage.jpg");
+  background-image: url("../img/homeImage.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1659,11 +1659,6 @@ section,
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
 }
 
-@media (min-width: 991px) {
-  .about .our-story {
-    padding-right: 35%;
-  }
-}
 
 .about .our-story h4 {
   text-transform: uppercase;
@@ -1732,7 +1727,6 @@ section,
 }
 
 .about .about-img img {
-  position: absolute;
   inset: 0;
   display: block;
   width: 100%;
@@ -1780,11 +1774,7 @@ section,
 }
 
 .alt-services-2 .features-image img {
-  position: absolute;
-  inset: 0;
-  display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   z-index: 1;
 }
