@@ -29,7 +29,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.55);  /* The default color of the main navmenu links */
+  --nav-color:#ffffff;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -161,7 +161,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.35);
+  --background-color: rgba(0, 0, 0, 0.6);
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -172,7 +172,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 55px;
   margin-right: 8px;
 }
 
@@ -189,24 +189,46 @@ h6 {
   font-family: var(--heading-font);
   color: var(--color-primary);
 }
+.btn-otline-alm-primary, .btn-otline-alm-primary:hover
+{
+  border-color:var(--accent-color);
+  color: var(--accent-color);
 
+}
+.btn-otline-alm-primary:hover{
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: var(--accent-color) !important;
+  background-color: var(--background-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.service-img-cont{height: 200px;}
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
-
+.scrolled .header  .navmenu a, .scrolled .header  .navmenu a:focus{color:var(--accent-color);}
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(255, 255, 255, 0.95);
+  --background-color:#000000;
   --heading-color: #3c3c3c;
   --nav-color: #3c3c3c;
   --nav-hover-color: #3c3c3c;
+}
+.footer-logo{
+  border-radius: 10px;
+  max-height: 100% !important;
+  max-width: 100% !important;
+  width: 70px;
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop Navigation */
+/* Desktop Navigaion */
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
